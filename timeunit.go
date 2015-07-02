@@ -1,11 +1,12 @@
 package timeunit
 
 type TimeUnit struct {
-	Milliseconds milliseconds
-	Seconds seconds
-	Minutes minutes
-	Hours hours
-	Days days
+	Milliseconds Milliseconds
+	Seconds      Seconds
+	Minutes      Minutes
+	Hours        Hours
+	Days         Days
+
 }
 
 

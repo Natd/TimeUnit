@@ -1,25 +1,25 @@
 package timeunit
 
-type milliseconds struct {
+type Milliseconds struct {
 
 }
 
-func (m milliseconds) ToMilliseconds(value int64) int64 {
+func (m Milliseconds) ToMilliseconds(value int64) int64 {
 	return value
 }
 
-func (m milliseconds) ToSeconds(value int64) int64 {
+func (m Milliseconds) ToSeconds(value int64) int64 {
 	return value / 1000
 }
 
-func (m milliseconds) ToMinutes(value int64) int64 {
+func (m Milliseconds) ToMinutes(value int64) int64 {
 	return value / (60 * 1000)
 }
 
-func (m milliseconds) ToHours(value int64) int64 {
+func (m Milliseconds) ToHours(value int64) int64 {
 	return value / (60 * 60 * 1000)
 }
 
-func (m milliseconds) ToDays(value int64) int64 {
+func (m Milliseconds) ToDays(value int64) int64 {
 	return value / (60 * 60 * 24 * 1000)
 }
